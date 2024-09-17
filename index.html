@@ -3,26 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city ..." />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>New York</h1>
-      <p>
-        Monday 21:08, clear sky <br />
-        Humidity: 76%, Wind: 3.09km/h
-      </p>
-      <div>☁️65˙F</div>
-    </main>
-    <footer>
-      This project was coded by <a href="">Andrea Morinigo</a>, is open-sourced
-      on <a href=""> GitHub </a> and hosted on <a href=""> Netlify</a>
-    </footer>
+    <div class="weather-app-container">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city ..."
+            class="search-form"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">New York</h1>
+            <p class="weather-app-details">
+              Monday 21:08, clear sky <br />
+              Humidity: <strong>76%</strong>, Wind: <strong> 3.09km/h </strong>
+            </p>
+          </div>
+          <div class="temperature">
+            <div class="temperature-icon">☁️</div>
+            <div class="temperature-number">65</div>
+            <div class="temperature-unit">˙F</div>
+          </div>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        This project was coded by <a href="">Andrea Morinigo</a>, is
+        open-sourced on <a href=""> GitHub </a> and hosted on
+        <a href=""> Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
