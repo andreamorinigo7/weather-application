@@ -22,7 +22,7 @@ header {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.05);
 }
 
-.search-form {
+.search-form-input {
   background-color: transparent;
   border: 0.5px solid rgba(255, 255, 255, 0.4);
   font-size: 14px;
@@ -30,7 +30,7 @@ header {
   width: 75%;
   border-radius: 10px;
   color: rgba(0, 0, 0, 0.5);
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .search-form-button {
@@ -42,7 +42,7 @@ header {
   border-radius: 10px;
   margin-left: 20px;
   color: rgba(0, 0, 0, 0.5);
-  font-weight: 300;
+  font-weight: 200;
 }
 .search-form-button:hover {
   background: rgba(255, 255, 255, 0.4);
