@@ -31,14 +31,24 @@
           <div>
             <h1 class="weather-app-city" id="city">New York</h1>
             <p class="weather-app-details">
-              Monday 21:08, clear sky <br />
-              Humidity: <strong>76%</strong>, Wind: <strong> 3.09km/h </strong>
+              <span id="time"></span>
+              , <span id="description"></span> <br />
+              Humidity: <span id="humidity"><strong></strong></span>, Wind:<span
+                id="wind-speed"
+              >
+                <strong></strong
+              ></span>
             </p>
           </div>
           <div class="temperature-container">
-            <div class="temperature-icon">☁️</div>
+            <div class="temperature-icon" id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
+                alt="weather-icon"
+              />
+            </div>
             <div class="temperature-number" id="temperature">65</div>
-            <div class="temperature-unit">° F</div>
+            <div class="temperature-unit">°F</div>
           </div>
         </div>
       </main>
