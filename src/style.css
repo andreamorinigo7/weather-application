@@ -64,8 +64,14 @@ header {
   font-weight: 300;
   margin: 30px 0 30px;
 }
-.weather-app-details strong {
+.windSpeed {
   color: rgba(148, 187, 233, 1);
+  font-weight: 400;
+}
+
+.humidity {
+  color: rgba(148, 187, 233, 1);
+  font-weight: 400;
 }
 
 .temperature-container {
