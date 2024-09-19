@@ -72,25 +72,24 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   let forecastHtml = "";
+  let startIndex = 1;
 
   response.data.daily.forEach(function (day, index) {
-    if (index < 5) {
+    if (index >= startIndex && index < startIndex + 5) {
       forecastHtml =
         forecastHtml +
         ` 
-      <div class="weather-forecast-day">
+      <div class="weather-forecast-week-bubble">
             <div class="weather-forecast-date">${formatDay(day.time)}</div>
              <img src="${
                day.condition.icon_url
              }" class="weather-forecast-icon" />
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
-                <strong>${Math.round(day.temperature.minimum)}°</strong>
-              </div>
-              <div class="weather-forecast-temperature">${Math.round(
+                <strong>${Math.round(day.temperature.minimum)}° </strong>
+              </div> - 
+              <div class="weather-forecast-temperature"> ${Math.round(
                 day.temperature.maximum
               )}°</div>
             </div>

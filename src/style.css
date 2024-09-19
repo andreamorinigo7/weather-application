@@ -53,17 +53,28 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.current-data {
+  font-weight: 300;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+
+.weather-time {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 30px 0 0;
+}
+
 .weather-app-city {
-  margin: 30px 0 30px;
   font-size: 45px;
+  margin: 0 auto;
   color: rgba(255, 255, 255, 1);
 }
 
-.weather-app-details {
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 300;
-  margin: 30px 0 30px;
+.weather-app-description {
+  color: rgba(255, 255, 255, 0.7);
 }
+
 .windSpeed {
   color: rgba(148, 187, 233, 1);
   font-weight: 400;
@@ -76,53 +87,62 @@ header {
 
 .temperature-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .temperature-icon {
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-left: 40px;
 }
 
 .temperature-number {
-  font-size: 80px;
+  font-size: 100px;
   margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 10px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .temperature-unit {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 75px;
-  margin-right: 30px;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .weather-forecast {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 30px;
+  padding: 0 0 30px 0;
 }
-
-.weather-forecast-date {
+.weather-forecast-week-bubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
+  width: 96px;
+  height: 200px;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 0.2) 0%,
+    rgba(148, 187, 233, 0.2) 100%
+  );
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 15px 0px 15px 0px;
+}
+.weather-forecast-date {
   font-weight: 300;
   line-height: 20px;
 }
 .weather-forecast-icon {
-  font-size: 20px;
   display: block;
   margin: 0 auto;
-  margin-top: 10px;
 }
 .weather-forecast-temperatures {
-  text-align: center;
   color: rgba(148, 187, 233, 1);
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 15px 30px;
+  display: inline-flex;
+  margin: 0 auto;
 }
 
 footer {
@@ -138,6 +158,18 @@ a {
   color: rgb(238, 174, 202);
   text-decoration: none;
 }
+
+.weather-forecast-week-bubble:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 0.8) 0%,
+    rgba(148, 187, 233, 0.8) 100%
+  );
+  display: grid;
+  grid-column: 10fr;
+  transition: all 1000ms ease-in-out;
+}
+
 a:hover {
   text-decoration: underline;
 }

@@ -28,17 +28,17 @@
       </header>
       <main>
         <div class="weather-app-data">
-          <div>
-            <h1 class="weather-app-city" id="city">New York</h1>
+          <div class="current-data">
+            <div class="weather-time" id="time"></div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <div class="weather-app-description" id="description"></div>
             <p class="weather-app-details">
-              <span id="time"></span>
-              , <span id="description"></span> <br />
               Humidity:
-              <span class="humidity" id="humidity"><strong></strong></span>,
-              Wind:
-              <span class="windSpeed" id="wind-speed"> <strong></strong></span>
+              <span class="humidity" id="humidity"></span>, Wind:
+              <span class="windSpeed" id="wind-speed"> </span>
             </p>
           </div>
+
           <div class="temperature-container">
             <div class="temperature-icon" id="icon">
               <img
@@ -50,18 +50,7 @@
             <div class="temperature-unit">°F</div>
           </div>
         </div>
-        <div class="weather-forecast" id="forecast">
-          <div class="weather-forecast-day">
-            <div class="weather-forecast-date">Tue</div>
-            <div class="weather-forecast-icon">⛅️</div>
-            <div class="weather-forecast-temperatures">
-              <div class="weather-forecast-temperature">
-                <strong>59°F </strong>
-              </div>
-              <div class="weather-forecast-temperature">79°F</div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
       <footer>
         This project was coded by
