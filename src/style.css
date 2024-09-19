@@ -122,8 +122,6 @@ header {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-}
-.weather-forecast-temperature {
   padding: 0 15px 30px;
 }
 
